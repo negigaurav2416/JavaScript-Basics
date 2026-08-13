@@ -33,3 +33,4 @@ console.log(arr9.slice(1,3)); // slice(start, end) → end is excluded (1,2)
 
 const arr10 = [1,2,3,4,5,6,7];
 console.log(arr10.splice(1,3)); // splice(start, end) → end is also taken (1,2,3)
+
