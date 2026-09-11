@@ -27,7 +27,7 @@ else{
     console.log("A+ GRADE");
 }
 
-// AND -> && ..... OR -> ||
+//Logical Operators ---> AND -> && ..... OR -> ||
 const a = 10;
 const b = 5;
 if (a > 0 && b > 0){
@@ -45,3 +45,18 @@ if (c > 0 || d > 0){
 else{
     console.log("Both are not positive");
 }
+
+// NULLISH COALESCING Operator (??) : Null and Undefined
+let val1;
+val1 = 5 ?? 10
+console.log(val1);
+
+let val2;
+val2 = null ?? 10
+console.log(val2);
+
+// Ternary Operator
+// condition ? true : false
+
+const num = 50
+num > 0 ? console.log("+ve number") : console.log("-ve number");
