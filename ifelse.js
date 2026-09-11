@@ -40,7 +40,7 @@ else{
 const c = -10;
 const d = -5;
 if (c > 0 || d > 0){
-    console.log("Both are positives"); // both conditions must true to execute this part
+    console.log("Both are positives"); // both conditions must true to execute this part this line of code
 }
 else{
     console.log("Both are not positive");
