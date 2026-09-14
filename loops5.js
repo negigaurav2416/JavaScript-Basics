@@ -3,7 +3,6 @@
 // For each loop - forEach() executes a function once for every element in an array
 // annot use break or continue...
 
-
 const arr = ["CSE", "DS", "AI/ML", "EE"];
 
 arr.forEach(function (val){ // loops through normal function
