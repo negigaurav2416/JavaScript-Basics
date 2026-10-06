@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-color: #222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.container {
+    display: flex;
+    gap: 20px;
+}
+.button {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.2s;
+}
+.button:hover {
+    transform: scale(1.08);
+}
+#green {
+    background-color: green;
+}
+#grey {
+    background-color: grey;
+}
+#yellow {
+    background-color: yellow;
+    color: black;
+}
+#purple {
+    background-color: purple;
+}
