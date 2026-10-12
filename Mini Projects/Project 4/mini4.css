@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #141e30, #4338ca);
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 500px;
+    background: #1e293b;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.game-header {
+    padding: 30px 20px;
+    text-align: center;
+    background: #4f46e5;
+}
+
+.game-header h1 {
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+.game-header p {
+    margin-top: 8px;
+    color: #e0e7ff;
+    font-size: 14px;
+}
+
+.game-content {
+    padding: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+#guess {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.guessField {
+    width: 100%;
+    max-width: 250px;
+    padding: 13px;
+    border: 2px solid #64748b;
+    border-radius: 10px;
+    outline: none;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.guessField:focus {
+    border-color: #818cf8;
+}
+
+.guessSubmit {
+    width: 100%;
+    max-width: 250px;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #6366f1;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.guessSubmit:hover {
+    background: #4338ca;
+}
+
+.resultParas {
+    margin-top: 28px;
+    padding: 18px;
+    background: #0f172a;
+    border-radius: 12px;
+}
+
+.resultParas p {
+    margin: 12px 0;
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.guesses {
+    color: #a5b4fc;
+    font-weight: bold;
+}
+
+.lastResult {
+    color: #fbbf24;
+    font-weight: bold;
+}
+
+.lowOrHi {
+    text-align: center;
+    color: #a5b4fc !important;
+    font-weight: bold;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .game-header h1 {
+        font-size: 23px;
+    }
+    .game-content {
+        padding: 20px;
+    }
+}

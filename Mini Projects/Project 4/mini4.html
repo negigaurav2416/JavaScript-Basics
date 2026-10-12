@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess a Number</title>
+    <link rel="stylesheet" href="mini4.css">
+</head>
+<body>
+    <main id="wrapper">
+        <header class="game-header">
+            <h1>Number Guessing Game</h1>
+            <p>Guess a number between 1 and 100.</p>
+            <p>You have 10 attempts!</p>
+        </header>
+        <section class="game-content">
+            <form class="form">
+                <label for="guessField" id="guess">Enter your guess</label>
+                <input type="number" id="guessField" class="guessField"
+                    min="1" max="100" placeholder="1-100" required>
+                <input type="submit" id="sub" class="guessSubmit"
+                    value="Submit Guess">
+            </form>
+            <div class="resultParas">
+                <p>Previous guesses: <span class="guesses">None yet</span></p>
+                <p>Guesses remaining: <span class="lastResult">10</span></p>
+                <p class="lowOrHi" aria-live="polite">Start guessing!</p>
+            </div>
+        </section>
+        <footer>Think smart & Guess wisely</footer>
+    </main>
+    <script src="mini4.js"></script>
+</body>
+</html>
