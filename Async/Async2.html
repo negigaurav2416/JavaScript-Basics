@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async project</title>
+</head>
+<body>
+    <h1>Chai Aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Submit/Stop</button>
+    <script>
+        // setInterval() runs a function repeatedly after a fixed time interval
+        // clearInterval() stops a repeating interval
+
+        const start = document.querySelector('#start')
+        const stop = document.querySelector('#stop');
+        let timer;
+        const changeME = function(){
+            console.log("This is Gaurav");
+        }
+        start.addEventListener('click', function(){
+            timer = setInterval(function(){
+            console.log("This is Gaurav");
+        },2000);
+        })
+        stop.addEventListener('click', function(){
+            clearInterval(timer);
+        })
+        
+    </script>
+</body>
+</html>
